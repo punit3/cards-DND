@@ -6,10 +6,10 @@ Here’s how you can structure the content for the `README.md` file:
 
 ## Overview
 
-This project showcases a set of cards displayed in a grid format on the homepage. Each card contains a **name** and its **position**, fetched via a mocked API using **MSW (Mock Service Worker)**. The cards are draggable, allowing users to rearrange them. Upon dragging, the position numbers of the cards update, and the new arrangement is auto-saved to the API. On page refresh, the updated card positions are fetched from the API.
+This project showcases a set of cards displayed in a grid format on the homepage. Each card contains a **image** **name** and its **position**, fetched via a mocked API using **MSW (Mock Service Worker)**. The cards are draggable, allowing users to rearrange them. Upon dragging, the position numbers of the cards update, and the new arrangement is auto-saved to the API. On page refresh, the updated card positions are fetched from the API.
 
 ## Features
-- **Card Grid Display**: Five cards are displayed in a responsive grid format.
+- **Card Grid Display**: Five cards are displayed in a grid format.
 - **Mocked API**: Data is fetched using `msw` to simulate API calls.
 - **Loading Spinner**: Displays while the card images are loading.
 - **Drag-and-Drop Functionality**: Cards can be moved and rearranged by dragging, updating their positions dynamically.
