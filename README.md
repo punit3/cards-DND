@@ -1,34 +1,54 @@
-# Mantine Vite template
+Here’s how you can structure the content for the `README.md` file:
+
+---
+
+# Project Title
+
+## Overview
+
+This project showcases a set of cards displayed in a grid format on the homepage. Each card contains a **name** and its **position**, fetched via a mocked API using **MSW (Mock Service Worker)**. The cards are draggable, allowing users to rearrange them. Upon dragging, the position numbers of the cards update, and the new arrangement is auto-saved to the API. On page refresh, the updated card positions are fetched from the API.
 
 ## Features
+- **Card Grid Display**: Five cards are displayed in a responsive grid format.
+- **Mocked API**: Data is fetched using `msw` to simulate API calls.
+- **Loading Spinner**: Displays while the card images are loading.
+- **Drag-and-Drop Functionality**: Cards can be moved and rearranged by dragging, updating their positions dynamically.
+- **Auto-save**: Changes to card positions are automatically saved to the API.
+- **Persistent State**: On refresh, the card positions are fetched with the updated positions.
 
-This template comes with the following features:
+## Libraries and Frameworks
+- **Vite React Template** from [Mantine.dev](https://mantine.dev/): The base framework for the project.
+- **MSW (Mock Service Worker)**: Used for mocking API calls to fetch and update card data.
 
-- [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/)
-- [Vitest](https://vitest.dev/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+## Getting Started
 
-## npm scripts
+### Prerequisites
+Ensure that you have **Node.js** and **npm** installed on your machine.
 
-## Build and dev scripts
+### Installation and Running the App
 
-- `dev` – start development server
-- `build` – build production version of the app
-- `preview` – locally preview production build
+1. **Clone the Repository**
+   ```bash
+   git clone [repository-link]
+   ```
+2. **Navigate to the Project Directory**
+   ```bash
+   cd [project-folder]
+   ```
+3. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+4. **Start the Development Server**
+   ```bash
+   npm run dev
+   ```
 
-### Testing scripts
+The app should now be running in development mode, and you can view it by visiting `http://localhost:3000` in your browser.
 
-- `typecheck` – checks TypeScript types
-- `lint` – runs ESLint
-- `prettier:check` – checks files with Prettier
-- `vitest` – runs vitest tests
-- `vitest:watch` – starts vitest watch
-- `test` – runs `vitest`, `prettier:check`, `lint` and `typecheck` scripts
+## Contributions
+Feel free to open issues or submit pull requests to help improve this project.
 
-### Other scripts
+---
 
-- `storybook` – starts storybook dev server
-- `storybook:build` – build production storybook bundle to `storybook-static`
-- `prettier:write` – formats all files with Prettier
+This `README.md` file should provide clear and concise instructions for users looking to understand the project and run it locally.
