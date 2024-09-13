@@ -17,7 +17,7 @@ This project showcases a set of cards displayed in a grid format on the homepage
 - **Persistent State**: On refresh, the card positions are fetched with the updated positions.
 
 ## Libraries and Frameworks
-- **Vite React Template** from [Mantine.dev](https://mantine.dev/): The base framework for the project.
+- **Vite React-TypeScript Template** from [Mantine.dev](https://mantine.dev/): The base framework for the project.
 - **MSW (Mock Service Worker)**: Used for mocking API calls to fetch and update card data.
 
 ## Getting Started
@@ -44,10 +44,8 @@ Ensure that you have **Node.js** and **npm** installed on your machine.
    npm run dev
    ```
 
-The app should now be running in development mode, and you can view it by visiting `http://localhost:3000` in your browser.
+The app should now be running in development mode
 
-## Contributions
-Feel free to open issues or submit pull requests to help improve this project.
 
 ---
 
