@@ -1,10 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { DndList } from './components/DragandDrop/DragandDropList';
+// import { DndList } from './components/DragandDrop/DragandDropList';
+import { HomePage } from './pages/Home.page';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <DndList />,
+    element: <HomePage />,
   },
 
 ]);

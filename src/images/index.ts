@@ -12,4 +12,3 @@ export const images = {
   cat5
 };
 
-// export const blankCard = onePiece;

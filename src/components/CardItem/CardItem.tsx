@@ -61,7 +61,7 @@ export function CardItem({ imageUrl, title,position }: CardItemProps) {
         </Card>
       </div>
 
-      {/* Overlay */}
+     
       <Modal
         opened={overlayVisible}
         closeOnClickOutside={false} 

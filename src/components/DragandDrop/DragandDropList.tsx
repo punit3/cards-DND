@@ -19,7 +19,7 @@ export function DndList() {
         const response = await fetch('/data');
         const data = await response.json();
 
-        // Split data into two lists
+       
         const splitIndex = Math.ceil(data.length / 2);
         setListOne(data.slice(0, splitIndex));
         setListTwo(data.slice(splitIndex));
@@ -36,12 +36,12 @@ export function DndList() {
 
     setIsSaving(true);
 
-    // Introduce a 2-second delay before saving
+   
     setTimeout(async () => {
       try {
         const updatedData = [...listOne, ...listTwo]; 
 
-        const response = await fetch('/data', {
+        const response = await fetch('/data/save', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -202,7 +202,7 @@ export function DndList() {
       </div>
     )}
 
-    {/* Display time since last save */}
+   
     {lastSavedTime && (
       <Text>
         Time since last save: {Math.floor((Date.now() - lastSavedTime) / 1000)} seconds
